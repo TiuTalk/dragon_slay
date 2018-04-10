@@ -1,0 +1,23 @@
+language: ruby
+
+rvm:
+  - 2.5.1
+
+cache: bundler
+
+services:
+  - postgresql
+
+before_install:
+  - gem install bundler
+
+before_script:
+  - bundle exec rails db:setup
+
+script:
+  - bundle exec bundler audit --update
+  - bundle exec rubocop
+  - bundle exec rspec
+
+notifications:
+  email: false
