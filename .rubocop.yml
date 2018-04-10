@@ -1,0 +1,33 @@
+AllCops:
+  Include:
+    - '**/Rakefile'
+    - '**/config.ru'
+  Exclude:
+    - 'db/**/*'
+    - 'config/**/*'
+
+Rails:
+  Enabled: true
+
+Naming/FileName:
+  Exclude:
+    - Gemfile
+
+Style/MixinUsage:
+  Exclude:
+    - 'bin/**/*'
+
+Bundler/OrderedGems:
+  Enabled: false
+
+Style/Documentation:
+  Enabled: false
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Metrics/LineLength:
+  Max: 120
+
+Layout/TrailingBlankLines:
+  Enabled: false
