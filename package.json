@@ -1,5 +1,9 @@
 {
   "name": "dragon_slay",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "normalize-css": "^2.3.1"
+  }
 }

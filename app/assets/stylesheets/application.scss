@@ -1,0 +1,9 @@
+$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts" !default;
+
+@import "normalize-css/normalize";
+@import "font-awesome/scss/font-awesome";
+
+body {
+  background: image-url("background.jpg") top center fixed;
+  background-size: cover;
+}
