@@ -3,16 +3,20 @@ language: ruby
 rvm:
   - 2.5.1
 
-cache: bundler
+cache:
+  bundler: true
+  yarn: true
 
 services:
   - postgresql
 
 before_install:
   - gem install bundler
+  - npm install -g yarn
 
 before_script:
   - bundle exec rails db:setup
+  - yarn
 
 script:
   - bundle exec bundle audit --update
