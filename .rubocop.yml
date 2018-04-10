@@ -5,6 +5,7 @@ AllCops:
   Exclude:
     - 'db/**/*'
     - 'config/**/*'
+    - 'vendor/bundle/**/*'
 
 Rails:
   Enabled: true

@@ -15,7 +15,7 @@ before_script:
   - bundle exec rails db:setup
 
 script:
-  - bundle exec bundler audit --update
+  - bundle exec bundle audit --update
   - bundle exec rubocop
   - bundle exec rspec
 
