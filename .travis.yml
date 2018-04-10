@@ -17,6 +17,7 @@ before_script:
 script:
   - bundle exec bundle audit --update
   - bundle exec rubocop
+  - bundle exec reek
   - bundle exec rspec
 
 notifications:

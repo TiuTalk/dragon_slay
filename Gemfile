@@ -24,6 +24,7 @@ group :development do
   gem 'spring-watcher-listen', '~> 2.0.0'
   gem 'bundler-audit', require: false
   gem 'rubocop', require: false
+  gem 'reek', require: false
 end
 
 group :test do
