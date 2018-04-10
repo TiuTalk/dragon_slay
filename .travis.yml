@@ -22,7 +22,7 @@ script:
   - bundle exec bundle audit --update
   - bundle exec rubocop
   - bundle exec reek
-  - bundle exec rspec
+  - bundle exec rspec --format progress --no-profile
 
 notifications:
   email: false
