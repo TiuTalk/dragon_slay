@@ -6,5 +6,10 @@ RSpec.describe PagesController, type: :controller do
       get :home
       expect(response).to be_successful
     end
+
+    it 'includes the meta title' do
+      get :home
+      expect(response.body).to include('Home • DragonSlay')
+    end
   end
 end

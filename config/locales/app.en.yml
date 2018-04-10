@@ -1,0 +1,6 @@
+en:
+  page_meta:
+    titles:
+      base: "%{value} • DragonSlay"
+      pages:
+        home: "Home"

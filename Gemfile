@@ -13,6 +13,8 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
+gem 'page_meta', '~> 0.2'
+
 group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
