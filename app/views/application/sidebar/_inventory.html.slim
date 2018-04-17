@@ -5,11 +5,15 @@ hr
     items = Item.all
     slots = 20
     inventory = (1..rand(5..slots)).map { items.sample }.compact
-  - inventory.each do |item|
-    .item class=item.rarity
-      = image_tag("icons/#{item.icon}.jpg", alt: item.name)
-      - if item.stackable?
-        .quantity= rand(1..20)
-  - if inventory.length < slots
-    - (5 - (inventory.length % 5)).times do
-      .item.empty
+
+  h3 Inventory (#{inventory.length}/#{slots})
+
+  .items
+    - inventory.each do |item|
+      .item class=item.rarity
+        = image_tag("icons/#{item.icon}.jpg", alt: item.name)
+        - if item.stackable?
+          .quantity= rand(1..20)
+    - if inventory.length < slots
+      - (5 - (inventory.length % 5)).times do
+        .item.empty

@@ -51,17 +51,21 @@
   }
 
   .inventory {
-    display: flex;
-    display: -webkit-flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: auto;
-    align-content: flex-start;
+    .items {
+      margin-top: 1em;
 
-    .item {
-      flex: 0 0 auto;
-      margin: 2px;
+      display: flex;
+      display: -webkit-flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: auto;
+      align-content: flex-start;
+
+      .item {
+        flex: 0 0 auto;
+        margin: 2px;
+      }
     }
   }
 }
