@@ -17,6 +17,7 @@ gem 'page_meta', '~> 0.2'
 group :development, :test do
   gem 'rspec-rails'
   gem 'pry-rails'
+  gem 'factory_bot_rails'
 end
 
 group :development do
@@ -30,6 +31,8 @@ group :development do
 end
 
 group :test do
+  gem 'shoulda-matchers'
+  gem 'database_cleaner'
   gem 'simplecov', require: false
 end
 
