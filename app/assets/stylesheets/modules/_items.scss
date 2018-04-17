@@ -1,0 +1,47 @@
+$rarity: (
+  common: #ffffff,
+  uncommon: #1eff00,
+  rare: #0070dd,
+  epic: #a335ee,
+  legendary: #ff8000,
+  artifact: #e6cc80,
+);
+
+.item {
+  $size: 48px;
+
+  display: inline-block;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: auto;
+    padding: 2px;
+    border-radius: 6px;
+    background: #040504;
+    width: $size;
+    height: $size;
+  }
+
+  @each $name, $color in $rarity {
+    &.#{$name} img {
+      $border: rgba($color, .9);
+
+      border: 2px solid;
+      border-color: darken($border, 10%) darken($border, 30%) darken($border, 30%) darken($border, 20%);
+    }
+  }
+
+  .quantity {
+    position: absolute;
+    bottom: 8px;
+    right: 5px;
+    line-height: 1em;
+    text-align: right;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    font-size: .9em;
+    font-weight: bold;
+  }
+}
+
+

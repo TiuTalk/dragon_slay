@@ -1,0 +1,30 @@
+.character
+  h3 Talkannon Paice
+  p Level 15 Hunter
+
+  dl
+    / Health
+    dt.health
+      i.fa.fa-heart
+    dd.health
+      ruby:
+        value = rand(1..100)
+      progress max="100" value=value
+      span.label = "#{value} / 100 hp"
+    / Energy
+    dt.energy
+      i.fa.fa-bolt
+    dd.energy
+      ruby:
+        value = rand(1..100)
+      progress max="100" value=value
+      span.label = "#{value} / 100 ap"
+    / Experience
+    dt.experience
+      i.fa.fa-arrow-circle-up
+    dd.experience
+      ruby:
+        value = rand(1..100)
+      progress max="100" value=value
+      span.label = "#{value} / 100 xp"
+

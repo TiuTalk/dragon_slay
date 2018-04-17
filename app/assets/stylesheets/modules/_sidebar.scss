@@ -1,0 +1,45 @@
+.sidebar {
+  .character {
+    dl { margin-bottom: 0 }
+    dt, dd { display: inline-block; margin: 0 }
+
+    dt { width: 10%; text-align: center; font-size: 1.1em; margin-bottom: .8em }
+    dd { width: 85%; padding-left: .5em; position: relative }
+
+    progress {
+      -webkit-appearance: none;
+      appearance: none;
+
+      height: .8em;
+      vertical-align: middle;
+      width: 100%;
+      margin: -5px 0 0 0;
+      border: 1px solid rgba(0, 0, 0, .5);
+      border-radius: 2px;
+
+      &::-webkit-progress-value { border-radius: 2px 0 0 2px }
+      &::-webkit-progress-bar { border-radius: 2px; background-color: rgba(0, 0, 0, .3) }
+    }
+
+    .health { .fa { color: red }; progress::-webkit-progress-value { background-color: darken(red, 20%) }; }
+    .energy { .fa { color: yellow }; progress::-webkit-progress-value { background-color: darken(yellow, 20%) }; }
+    .experience { .fa { color: lime }; progress::-webkit-progress-value { background-color: darken(lime, 20%) }; }
+
+    .label {
+      display: none;
+      font-size: 0.65em;
+      line-height: 1.6em;
+      color: #fff;
+      position: absolute;
+      top: 0;
+      right: 3px;
+      height: 100%;
+      vertical-align: middle;
+      text-shadow: 0 0 3px black;
+      font-weight: bold;
+    }
+
+    dd:hover .label { display: block }
+  }
+}
+

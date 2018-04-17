@@ -10,6 +10,15 @@ html
 
   body data-controller=controller_name data-action=action_name
 
-    == yield
+    .container
+      = render 'header'
+
+      main role="main"
+        .content
+          == yield
+
+        = render 'sidebar'
+
+      = render 'footer'
 
     = javascript_include_tag 'application'
