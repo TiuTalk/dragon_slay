@@ -22,6 +22,7 @@ script:
   - bundle exec bundle audit --update
   - bundle exec rubocop
   - bundle exec reek
+  - bundle exec brakeman --exit-on-warn --quiet -f plain
   - bundle exec rspec --format progress --no-profile
 
 notifications:

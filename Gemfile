@@ -28,6 +28,7 @@ group :development do
   gem 'bundler-audit', require: false
   gem 'rubocop', require: false
   gem 'reek', require: false
+  gem 'brakeman', require: false
 end
 
 group :test do
