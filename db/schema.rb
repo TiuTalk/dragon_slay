@@ -10,10 +10,21 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_04_17_040412) do
+ActiveRecord::Schema.define(version: 2018_04_17_040733) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "pgcrypto"
   enable_extension "plpgsql"
+
+  create_table "items", id: :uuid, default: -> { "gen_random_uuid()" }, force: :cascade do |t|
+    t.string "name"
+    t.string "icon"
+    t.string "kind"
+    t.integer "value", default: 1
+    t.boolean "stackable", default: true
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["name", "icon"], name: "index_items_on_name_and_icon", unique: true
+  end
 
 end
