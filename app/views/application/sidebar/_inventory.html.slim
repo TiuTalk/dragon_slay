@@ -1,7 +1,15 @@
 hr
 
 .inventory
-  table
-    tr
-      td item
-
+  ruby:
+    items = Item.all
+    slots = 20
+    inventory = rand(5..slots)
+  - inventory.times
+    ruby:
+      item = items.sample
+    .item class=item.rarity
+      = image_tag("icons/#{item.icon}.jpg", alt: item.name)
+      .quantity= rand(1..20)
+  - (slots - inventory).times
+    .item.empty

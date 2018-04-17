@@ -10,8 +10,10 @@ $rarity: (
 .item {
   $size: 48px;
 
-  display: inline-block;
   position: relative;
+  border-radius: 6px;
+  width: $size;
+  height: $size;
 
   img {
     width: 100%;
@@ -34,13 +36,21 @@ $rarity: (
 
   .quantity {
     position: absolute;
-    bottom: 8px;
+    bottom: 3px;
     right: 5px;
     line-height: 1em;
     text-align: right;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
     font-size: .9em;
     font-weight: bold;
+  }
+
+  &.empty {
+    background: rgba(0, 0, 0, .5);
+    border: 2px solid rgba(0, 0, 0, .8);
+
+    width: $size;
+    height: $size;
   }
 }
 

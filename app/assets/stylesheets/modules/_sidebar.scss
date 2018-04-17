@@ -1,10 +1,18 @@
 .sidebar {
+  hr {
+    background: rgba(255, 255, 255, .1);
+    height: 2px;
+    border: none;
+    margin: 1em 0;
+  }
+
   .character {
     dl { margin-bottom: 0 }
     dt, dd { display: inline-block; margin: 0 }
 
-    dt { width: 10%; text-align: center; font-size: 1.1em; margin-bottom: .8em }
+    dt { width: 10%; text-align: center; font-size: 1.1em }
     dd { width: 85%; padding-left: .5em; position: relative }
+    dd + dt { margin-top: .8em }
 
     progress {
       -webkit-appearance: none;
@@ -40,6 +48,21 @@
     }
 
     dd:hover .label { display: block }
+  }
+
+  .inventory {
+    display: flex;
+    display: -webkit-flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: auto;
+    align-content: flex-start;
+
+    .item {
+      flex: 0 0 auto;
+      margin: 2px;
+    }
   }
 }
 
