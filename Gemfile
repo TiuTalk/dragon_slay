@@ -30,6 +30,7 @@ group :development do
   gem 'rubocop', require: false
   gem 'reek', require: false
   gem 'brakeman', require: false
+  gem 'slim_lint', require: false
 end
 
 group :test do

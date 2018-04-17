@@ -26,6 +26,7 @@ before_script:
 script:
   - bundle exec bundle audit --update
   - bundle exec rubocop
+  - bundle exec slim-lint app/views
   - bundle exec reek
   - bundle exec brakeman --exit-on-warn --quiet -f plain
   - bundle exec rspec --format progress --no-profile
