@@ -1,20 +1,30 @@
-$fa-font-path: "//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts" !default;
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts' !default;
 
-@import "normalize-css/normalize";
-@import "font-awesome/scss/font-awesome";
+@import 'normalize-css/normalize';
+@import 'font-awesome/scss/font-awesome';
 @import url('https://fonts.googleapis.com/css?family=Philosopher|Ubuntu');
 
+$white: #fff;
+
 html { box-sizing: border-box; }
-*, *:before, *:after { box-sizing: inherit; }
+*,
+*::before,
+*::after { box-sizing: inherit; }
 
-body {
-  background: image-url("background.jpg") top center fixed;
-  background-size: cover;
-
-  font-family: 'Ubuntu', sans-serif;
-  color: #fff;
-}
-
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: 'Philosopher', sans-serif;
 }
+
+body {
+  background: image-url('background.jpg') top center fixed;
+  background-size: cover;
+
+  color: $white;
+  font-family: 'Ubuntu', sans-serif;
+}
+
