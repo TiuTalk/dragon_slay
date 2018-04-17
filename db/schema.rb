@@ -20,6 +20,7 @@ ActiveRecord::Schema.define(version: 2018_04_17_040733) do
     t.string "name"
     t.string "icon"
     t.string "kind"
+    t.string "rarity", default: "common"
     t.integer "value", default: 1
     t.boolean "stackable", default: true
     t.datetime "created_at", null: false

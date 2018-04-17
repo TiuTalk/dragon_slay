@@ -1,10 +1,7 @@
 class Item < ApplicationRecord
-  RARITIES = %i(common uncommon rare epic legendary artifact).freeze
+  RARITIES = %w[common uncommon rare epic legendary artifact].freeze
 
   # Validations
-  validates :name, :icon, :kind, :value, presence: true
-
-  def rarity
-    RARITIES.sample
-  end
+  validates :name, :icon, :kind, :rarity, :value, presence: true
+  validates :rarity, inclusion: { in: RARITIES }
 end
