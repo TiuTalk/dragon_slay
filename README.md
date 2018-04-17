@@ -1,24 +1,5 @@
-# README
+# DragonSlay
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+[![Build Status](https://travis-ci.org/TiuTalk/dragon_slay.svg?branch=master)](https://travis-ci.org/TiuTalk/dragon_slay)
+[![Maintainability](https://api.codeclimate.com/v1/badges/62d7f569aa572399b94a/maintainability)](https://codeclimate.com/github/TiuTalk/dragon_slay/maintainability)
+[![Dependency Status](https://gemnasium.com/badges/github.com/TiuTalk/dragon_slay.svg)](https://gemnasium.com/github.com/TiuTalk/dragon_slay)
